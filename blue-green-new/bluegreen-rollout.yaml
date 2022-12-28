@@ -24,7 +24,7 @@ spec:
               containerPort: 8080
               protocol: TCP
     strategy:
-      bluegreen:
+      blueGreen:
         autoPromotionEnabled: false
         activeService: bluegreen-demo
         previewService: bluegreen-demo-preview
