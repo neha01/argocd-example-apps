@@ -12,6 +12,9 @@ image:
 service:
   type: ClusterIP
   port: 80
+  
+strategy:
+  autoPromotionEnabled: false
 
 ingress:
   enabled: false
