@@ -16,7 +16,7 @@ spec:
       release: {{ .Release.Name }}
   strategy:
     blueGreen:
-      autoPromotionEnabled: {{ .Values.autoPromotionEnabled }}
+      autoPromotionEnabled: {{ .Values.strategy.autoPromotionEnabled }}
       activeService: {{ template "helm-guestbook.fullname" . }}
       previewService: {{ template "helm-guestbook.fullname" . }}-preview
   template:
